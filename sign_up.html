@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="signup.css" rel="stylesheet" type="text/css" />
+    <script>
+        function ValidateContactForm() {
+            var fname = document.ContactForm.firstname;
+            var lname = document.ContactForm.lastname;
+            var email = document.ContactForm.email;
+            var pwd = document.ContactForm.pwd;
+            var contact = document.ContactForm.contact;
+            var street = document.ContactForm.street;
+            var house = document.ContactForm.house;
+            var zip = document.ContactForm.zip;
+            var city = document.ContactForm.city;
+            if (fname.value == "") {
+                window.alert("Please enter your first name.");
+                fname.focus();
+                return false;
+            }
+            if (lname.value == "") {
+                window.alert("Please enter your last name.");
+                lname.focus();
+                return false;
+            }
+
+            if (email.value == "") {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (email.value.indexOf("@", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (email.value.indexOf(".", 0) < 0) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (pwd.value == "") {
+                window.alert("Please enter your password.");
+                pwd.focus();
+                return false;
+            }
+            if (contact.value == "") {
+                window.alert("Please enter your contact number.");
+                contact.focus();
+                return false;
+            }
+            if (street.value == "") {
+                window.alert("Please enter your street number.");
+                street.focus();
+                return false;
+            }
+            if (house.value == "") {
+                window.alert("Please enter your house number.");
+                house.focus();
+                return false;
+            }
+            if (zip.value == "") {
+                window.alert("Please enter your cities zip code.");
+                zip.focus();
+                return false;
+            }
+            if (city.value == "") {
+                window.alert("Please enter your city.");
+                city.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="nav_bar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Real Estate">
+        </div>
+        <ul>
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="about.html">About</a></li>
+            <li class="items"><a href="services.html">Services</a></li>
+            <li class="items"><a href="contactus.html">Contact Us</a></li>
+            <li class="items"><a href="login.html">Login</a></li>
+            <li class="items"><a href="sign_up.html">Signup</a></li>
+        </ul>
+       <img id="rotate" src="signup.jpg" alt="Sign Up Image">
+    </nav>
+    <form action="submit.php" method="post" name="ContactForm" onsubmit="return ValidateContactForm();"
+        class="signup_form">
+        
+
+        <h2>Fill Up Your Details</h2>
+
+        <br> <input type="text" name="firstname" placeholder="Your First Name...."><br>
+        <br> <input type="text" name="lastname" placeholder="Your Last Name....."><br>
+        <br> <input type="password" name="pwd" placeholder="Enter Password..."><br>
+        <br><select name="gender">
+            <option value="select your gender">Select Your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Prefer Not to say ">Prefer Not to say</option>
+        </select><br>
+        <br> <input type="text" name="email" placeholder="Your Email Address....."><br>
+        <br> <input type="text" name="contact" placeholder="Your Contact Number....."><br><br>
+        <fieldset style="padding:3px;padding-left: 50px;">
+            <legend style="padding-left: 20px;"><b>Address: </b></legend>
+            <input type="text" name="house" placeholder="Your House Number...">
+            <input type="text" name="city" placeholder="Your City......"><br><br>
+            <input type="text" name="street" placeholder="Your Street Name.....">
+            <input type="text" name="zip" placeholder="Area PIN Code..."><br>
+
+        </fieldset>
+        <br>
+        <div id="sub_reset">
+            <input type="submit" value="Submit" id="submit">
+            <input type="reset" value="Reset" id="reset">
+        </div>
+        <br>
+        <a href="login.html">
+            <p>Already a User? Login</p>
+        </a><br>
+    </form>
+    <br>
+    <footer>
+        <div>
+            Copyright &copy; www.realestate.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

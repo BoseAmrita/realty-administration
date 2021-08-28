@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+  <nav id="nav_bar">
+    <div id="logo">
+      <img src="logo.jpg" alt="Real Estate">
+    </div>
+    <ul>
+      <li class="items"><a href="index.html">Home</a></li>
+      <li class="items"><a href="about.html">About</a></li>
+      <li class="items"><a href="services.html">Services</a></li>
+      <li class="items"><a href="contactus.html">Contact Us</a></li>
+      <li class="items"><a href="login.html">Login</a></li>
+      <li class="items"><a href="sign_up.html">Signup</a></li>
+    </ul>
+  </nav>
+  <div id="login_form">
+    <img id="rotate" src="login.jpg" alt="Login Image">
+    <form action="check_login.php" method="POST" id="login">
+        <h1>Login with your details</h1><br>
+        <input type="email" name="username" placeholder="Your Email...." required><br><br>
+        <input type="password" name="pwd" placeholder="Enter password.." required><br><br>
+        <input type="submit" value="Login" name="submit" id="submit">
+        <a href="forgotPassword.php">Forgot password?</a><br><br>
+
+    </form>
+  </div>
+  <footer>
+    <div>
+      Copyright &copy; www.realestate.com. All rights reserved!
+    </div>
+  </footer>
+</body>
+
+</html>

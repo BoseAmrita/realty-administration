@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('house.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+/* Navigation Bar */
+#nav_bar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: black; 
+    min-width: fit-content;
+    
+}
+
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 24px;
+    margin-top: 20px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 3px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#nav_bar ul{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav_bar ul li{ 
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#nav_bar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#nav_bar ul li a:hover{
+    color: red;
+    background-color: greenyellow;
+}
+
+#about_us{
+    display: flex;
+    flex-direction: column;
+    padding:0px 200px;
+    height: auto;
+}
+#about_us h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#about_us p{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#about_us p:hover{
+    background-color: cyan;
+    border-radius: 30px;
+    padding: 5px;
+}
+#about_us h1:hover{
+    background-color: rgb(212, 14, 123);
+    border-radius: 30px;
+}
+
+
+#rotate{
+    margin-top: 20px;
+    height:100px;
+    width: 100px;
+    margin-left: 1100px;
+    margin-bottom: 50px;
+    animation: rotate 5s infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    margin-top: 100px;
+    padding: 19px 20px;
+}
+footer:hover{
+    color:green;
+    border: 2px solid red;
+    border-radius: 20px;
+}

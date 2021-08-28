@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('house.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+/* Navigation Bar */
+#nav_bar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    min-width: fit-content;
+    
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 24px;
+    margin-top: 20px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 3px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#nav_bar ul{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav_bar ul li{ 
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#nav_bar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#nav_bar ul li a:hover{
+    color: red;
+    background-color: greenyellow;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+    font-style: italic;
+    color: white;
+}
+table,td,th
+{
+    margin: auto;
+    border:1px solid black;
+    text-align:centre;
+    font-size:20px;
+}
+th
+{
+    height:50px;
+    text-align: center;
+    background-color:#008080;
+}
+td
+{
+    text-align: center;
+    background-color:#F0F8FF;
+}
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    min-width: fit-content;
+    color: white;
+    margin-top: 280px;
+    padding: 19px 20px;
+}
+footer:hover{
+    color:green;
+    border: 2px solid red;
+    border-radius: 20px;
+}

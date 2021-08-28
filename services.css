@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('house.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+/* Navigation Bar */
+#nav_bar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: black; 
+    min-width: fit-content;
+    
+}
+
+
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 24px;
+    margin-top: 20px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 3px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#nav_bar ul{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#nav_bar ul li{ 
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#nav_bar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#nav_bar ul li a:hover{
+    color: red;
+    background-color: greenyellow;
+}
+#image{
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    animation: rotate 5s infinite;
+
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+#image:hover{
+    border: 2px dotted red;
+}
+
+
+#services_data{
+    padding: 150px;
+    font-size: 1.4rem;
+}
+#services_data h1:hover{
+    background-color: greenyellow;
+    color: red;
+    border-radius: 30px;
+    padding: 10px;
+}
+#services_data td:hover{
+    background-color: cyan;
+    border-radius: 30px;
+    padding: 8px;
+}
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+    margin-top: 100px;
+    padding: 19px 20px;
+}
+footer:hover{
+    color:green;
+    border: 2px solid red;
+    border-radius: 20px;
+}
